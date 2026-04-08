@@ -1,5 +1,6 @@
 import React from 'react';
 import TableHeader from './TableHeader';
+import AudioPlayer from './AudioPlayer';
 
 function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
     return (
@@ -49,7 +50,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <td className="px-4 py-3 text-slate-900">{song.title}</td>
                                         <td className="px-4 py-3 text-slate-700">{song.artist}</td>
                                         <td className="px-4 py-3">
-                                            <audio controls preload="none" src={song.playUrl} className="h-10 w-60 max-w-full" />
+                                            <AudioPlayer src={song.playUrl} />
                                         </td>
                                         <td className="px-4 py-3">
                                             <a
