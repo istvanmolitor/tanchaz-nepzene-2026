@@ -10,3 +10,90 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+.audio-player {
+    display: flex;
+    width: 15rem;
+    max-width: 100%;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.audio-player__controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.125rem;
+    flex-shrink: 0;
+}
+
+.audio-player__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.audio-player__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-player__progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    height: 0.1875rem;
+    border-radius: 9999px;
+    background: #4f407e;
+    cursor: pointer;
+}
+
+.audio-player__progress::-webkit-slider-runnable-track {
+    height: 0.1875rem;
+    border-radius: 9999px;
+    background: #4f407e;
+}
+
+.audio-player__progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-top: -0.21875rem;
+    border-radius: 9999px;
+    border: 0;
+    background: #4f407e;
+}
+
+.audio-player__progress::-moz-range-track {
+    height: 0.1875rem;
+    border-radius: 9999px;
+    border: 0;
+    background: #4f407e;
+}
+
+.audio-player__progress::-moz-range-thumb {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 9999px;
+    border: 0;
+    background: #4f407e;
+}
+
+.audio-player__progress--idle::-webkit-slider-thumb {
+    width: 0;
+    height: 0;
+    margin-top: 0;
+}
+
+.audio-player__progress--idle::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
