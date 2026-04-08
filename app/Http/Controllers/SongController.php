@@ -24,6 +24,7 @@ class SongController extends Controller
                     'artist' => $song->artist,
                     'playUrl' => asset('waves/'.rawurlencode($song->file_name)),
                     'downloadUrl' => asset('waves/'.rawurlencode($song->file_name)),
+                    'lyrics' => $song->lyrics,
                 ];
             })
             ->values()

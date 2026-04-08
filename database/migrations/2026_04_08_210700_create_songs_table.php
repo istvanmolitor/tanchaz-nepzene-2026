@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('artist');
             $table->string('file_name');
+            $table->text('lyrics')->nullable();
             $table->timestamps();
         });
     }

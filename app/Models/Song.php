@@ -10,5 +10,6 @@ class Song extends Model
         'title',
         'artist',
         'file_name',
+        'lyrics',
     ];
 }
