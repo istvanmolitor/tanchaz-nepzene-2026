@@ -1,6 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import backgroundImage from '../images/background.jpg';
 import SearchInput from './components/SearchInput';
@@ -16,53 +16,53 @@ function MusicTableApp() {
     const [expandedSongIds, setExpandedSongIds] = useState([]);
 
     useEffect(() => {
-        let cancelled = false;
+        const controller = new AbortController();
+        const search = searchTerm.trim();
 
-        const loadSongs = async () => {
+        const timeoutId = setTimeout(async () => {
+            setLoading(true);
+            setError('');
+
             try {
-                const response = await fetch('/api/songs');
+                const params = new URLSearchParams();
+
+                if (search) {
+                    params.set('search', search);
+                }
+
+                const queryString = params.toString();
+                const endpoint = queryString ? `/api/songs?${queryString}` : '/api/songs';
+
+                const response = await fetch(endpoint, { signal: controller.signal });
 
                 if (!response.ok) {
                     throw new Error('Nem sikerült lekérni a zeneszámokat.');
                 }
 
                 const data = await response.json();
+                const songsList = Array.isArray(data) ? data : [];
+                const visibleSongIds = new Set(songsList.map((song) => song.id));
 
-                if (!cancelled) {
-                    setSongs(Array.isArray(data) ? data : []);
-                }
+                setSongs(songsList);
+                setExpandedSongIds((previousIds) => previousIds.filter((id) => visibleSongIds.has(id)));
             } catch (err) {
-                if (!cancelled) {
-                    setError(err instanceof Error ? err.message : 'Ismeretlen hiba történt.');
+                if (err instanceof Error && err.name === 'AbortError') {
+                    return;
                 }
+
+                setError(err instanceof Error ? err.message : 'Ismeretlen hiba történt.');
             } finally {
-                if (!cancelled) {
+                if (!controller.signal.aborted) {
                     setLoading(false);
                 }
             }
-        };
-
-        loadSongs();
+        }, 250);
 
         return () => {
-            cancelled = true;
+            clearTimeout(timeoutId);
+            controller.abort();
         };
-    }, []);
-
-    const filteredSongs = useMemo(() => {
-        const normalizedTerm = searchTerm.trim().toLowerCase();
-
-        if (!normalizedTerm) {
-            return songs;
-        }
-
-        return songs.filter((song) => {
-            const title = (song.title ?? '').toLowerCase();
-            const artist = (song.artist ?? '').toLowerCase();
-
-            return title.includes(normalizedTerm) || artist.includes(normalizedTerm);
-        });
-    }, [songs, searchTerm]);
+    }, [searchTerm]);
 
     const toggleLyrics = (songId) => {
         setExpandedSongIds((previousIds) => {
@@ -92,7 +92,7 @@ function MusicTableApp() {
 
                     {!loading && !error && (
                         <SongsTable
-                            filteredSongs={filteredSongs}
+                            filteredSongs={songs}
                             expandedSongIds={expandedSongIds}
                             toggleLyrics={toggleLyrics}
                         />

@@ -2,33 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Song;
+use App\Repositories\SongRepository;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class SongController extends Controller
 {
+    public function __construct(private readonly SongRepository $songRepository)
+    {
+    }
+
     public function index()
     {
         return view('welcome');
     }
 
-    public function songs(): JsonResponse
+    public function songs(Request $request): JsonResponse
     {
-        $songs = Song::query()
-            ->orderBy('title')
-            ->get()
-            ->map(function (Song $song) {
-                return [
-                    'id' => $song->id,
-                    'title' => $song->title,
-                    'artist' => $song->artist,
-                    'playUrl' => asset('waves/'.rawurlencode($song->file_name)),
-                    'downloadUrl' => asset('waves/'.rawurlencode($song->file_name)),
-                    'lyrics' => $song->lyrics,
-                ];
-            })
-            ->values()
-            ->all();
+        $songs = $this->songRepository->search($request->query('search'));
 
         return response()->json($songs);
     }
