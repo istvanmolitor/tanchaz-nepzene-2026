@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="preload" as="image" href="{{ Vite::asset('resources/images/background.jpg') }}" fetchpriority="high">
+        <link rel="preload" as="image" href="{{ Vite::asset('resources/images/header.jpg') }}" fetchpriority="high">
+        <link rel="preload" as="image" href="{{ Vite::asset('resources/images/header-text.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     </head>
     <body>

@@ -3,10 +3,23 @@ import '../css/app.css';
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import backgroundImage from '../images/background.jpg';
+import headerImage from '../images/header.jpg';
+import headerTextImage from '../images/header-text.png';
 import SearchInput from './components/SearchInput';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import SongsTable from './components/SongsTable';
+
+function InitialPageLoader() {
+    return (
+        <div className="flex min-h-screen items-center justify-center bg-[#F4BB91] px-4">
+            <div className="flex flex-col items-center gap-3 text-[#4f407e]">
+                <div className="h-10 w-10 animate-spin rounded-full border-4 border-[#4f407e]/25 border-t-[#4f407e]" />
+                <p className="text-sm font-semibold tracking-wide uppercase">Betöltés...</p>
+            </div>
+        </div>
+    );
+}
 
 function MusicTableApp() {
     const [songs, setSongs] = useState([]);
@@ -14,6 +27,51 @@ function MusicTableApp() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const [expandedSongIds, setExpandedSongIds] = useState([]);
+    const [isInitialLoadComplete, setIsInitialLoadComplete] = useState(false);
+    const [areCriticalImagesReady, setAreCriticalImagesReady] = useState(false);
+
+    useEffect(() => {
+        const imageSources = [backgroundImage, headerImage, headerTextImage];
+        let readyCount = 0;
+        let isCancelled = false;
+
+        const markReady = () => {
+            if (isCancelled) {
+                return;
+            }
+
+            readyCount += 1;
+
+            if (readyCount === imageSources.length) {
+                setAreCriticalImagesReady(true);
+            }
+        };
+
+        imageSources.forEach((src) => {
+            const image = new Image();
+            let isSettled = false;
+            const handleSettled = () => {
+                if (isSettled) {
+                    return;
+                }
+
+                isSettled = true;
+                markReady();
+            };
+
+            image.onload = handleSettled;
+            image.onerror = handleSettled;
+            image.src = src;
+
+            if (image.complete) {
+                handleSettled();
+            }
+        });
+
+        return () => {
+            isCancelled = true;
+        };
+    }, []);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -36,7 +94,7 @@ function MusicTableApp() {
                 const response = await fetch(endpoint, { signal: controller.signal });
 
                 if (!response.ok) {
-                    throw new Error('Nem sikerült lekérni a zeneszámokat.');
+                    throw new Error('Nem sikerült lekérdezni a zeneszámokat.');
                 }
 
                 const data = await response.json();
@@ -54,6 +112,7 @@ function MusicTableApp() {
             } finally {
                 if (!controller.signal.aborted) {
                     setLoading(false);
+                    setIsInitialLoadComplete(true);
                 }
             }
         }, 250);
@@ -73,6 +132,10 @@ function MusicTableApp() {
             return [...previousIds, songId];
         });
     };
+
+    if (!isInitialLoadComplete || !areCriticalImagesReady) {
+        return <InitialPageLoader />;
+    }
 
     return (
         <div
