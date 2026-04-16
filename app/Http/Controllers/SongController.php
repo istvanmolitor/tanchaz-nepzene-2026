@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SongResource;
 use App\Repositories\SongRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -21,6 +22,6 @@ class SongController extends Controller
     {
         $songs = $this->songRepository->search($request->query('search'));
 
-        return response()->json($songs);
+        return response()->json(SongResource::collection($songs)->resolve());
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import TableHeader from './TableHeader';
+import Header from './Header.jsx';
 import AudioPlayer from './AudioPlayer';
 
 function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {

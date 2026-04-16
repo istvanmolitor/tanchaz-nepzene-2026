@@ -3,10 +3,11 @@
 namespace App\Repositories;
 
 use App\Models\Song;
+use Illuminate\Database\Eloquent\Collection;
 
 class SongRepository
 {
-    public function search(?string $search = null): array
+    public function search(?string $search = null): Collection
     {
         $normalizedSearch = mb_strtolower(trim((string) $search));
         $songsQuery = Song::query();
@@ -20,18 +21,6 @@ class SongRepository
 
         return $songsQuery
             ->orderBy('title')
-            ->get()
-            ->map(function (Song $song) {
-                return [
-                    'id' => $song->id,
-                    'title' => $song->title,
-                    'artist' => $song->artist,
-                    'playUrl' => asset('waves/'.rawurlencode($song->file_name)),
-                    'downloadUrl' => asset('waves/'.rawurlencode($song->file_name)),
-                    'lyrics' => $song->lyrics,
-                ];
-            })
-            ->values()
-            ->all();
+            ->get();
     }
 }

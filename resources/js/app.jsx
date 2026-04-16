@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import backgroundImage from '../images/background.jpg';
 import SearchInput from './components/SearchInput';
-import TableHeader from './components/TableHeader';
-import TableFooter from './components/TableFooter';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
 import SongsTable from './components/SongsTable';
 
 function MusicTableApp() {
@@ -80,7 +80,7 @@ function MusicTableApp() {
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="max-w-6xl mx-auto">
-                <TableHeader />
+                <Header />
 
                 <div className="mx-auto w-full bg-[#F4BB91] p-6">
 
@@ -99,7 +99,7 @@ function MusicTableApp() {
                     )}
 
                 </div>
-                <TableFooter />
+                <Footer />
             </div>
         </div>
     );
