@@ -79,11 +79,10 @@ function MusicTableApp() {
             className="min-h-screen bg-cover bg-center bg-no-repeat px-4 py-8"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <div className="min-w-[56rem]">
+            <div className="max-w-6xl mx-auto">
                 <TableHeader />
 
-                <div className="mx-auto w-full max-w-6xl rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-                    <h1 className="mb-6 text-2xl font-semibold text-slate-900">Zeneszámok</h1>
+                <div className="mx-auto w-full bg-[#F4BB91] p-6">
 
                     <SearchInput value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
 
