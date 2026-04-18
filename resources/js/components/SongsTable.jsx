@@ -43,7 +43,9 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                                 />
                                             </div>
                                         </td>
-                                        <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">{song.title}</td>
+                                        <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">
+                                            <b>{song.title}</b> {song.region && `(${song.region})`}
+                                        </td>
                                         <td className="px-4 py-3 text-slate-700 border-r border-brand-accent">{song.artist}</td>
                                         <td className="px-4 py-3 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
@@ -65,7 +67,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                             <td colSpan={5} className="bg-transparent">
                                                 <div className=" p-4 border border-brand-secondary w-fit bg-white">
                                                     <p className="text-xs  font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
-                                                    <div 
+                                                    <div
                                                         className="mt-2 text-sm text-slate-700"
                                                         dangerouslySetInnerHTML={{ __html: song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.' }}
                                                     />
