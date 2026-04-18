@@ -4,7 +4,7 @@ import AudioPlayer from './AudioPlayer';
 import ToggleButton from './ToggleButton.jsx';
 
 const DownloadIcon = () => (
-    <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg className="h-10 w-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12,16l-5-5,1.4-1.5,2.6,2.6V4h2v8.2l2.6-2.6,1.4,1.5-5,5ZM6,20c-.6,0-1-.2-1.4-.6s-.6-.9-.6-1.4v-3h2v3h12v-3h2v3c0,.6-.2,1-.6,1.4s-.9.6-1.4.6H6Z"/>
     </svg>
 );
@@ -59,7 +59,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                             <a
                                                 href={song.downloadUrl}
                                                 download
-                                                className="inline-flex h-8 w-8 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
+                                                className="inline-flex h-16 w-16 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
                                                 title="Letöltés"
                                             >
                                                 <DownloadIcon />
@@ -70,8 +70,19 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                     {isExpanded && (
                                         <tr id={`lyrics-${song.id}`} className="bg-transparent border-b-4 border-brand-primary">
                                             <td colSpan={7} className="bg-transparent">
-                                                <div className=" p-4 border border-brand-secondary w-fit bg-white">
-                                                    <p className="text-xs  font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
+                                                <div className="relative p-4 border border-brand-secondary w-fit bg-white">
+                                                    <div className="flex justify-between items-start mb-2">
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => toggleLyrics(song.id)}
+                                                            className="flex items-center justify-center text-slate-700 hover:text-slate-900 transition"
+                                                            title="Becsuk"
+                                                        >
+                                                            <svg className="h-16 w-16 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7,14l5-5,5,5H7Z"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
                                                     <div
                                                         className="mt-2 text-sm text-slate-700"
                                                         dangerouslySetInnerHTML={{ __html: song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.' }}

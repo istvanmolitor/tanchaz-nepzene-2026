@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="mt-6 border-t text-white border-slate-200 pt-4 text-center text-sm text-slate-600">
+        <footer className="mt-6 text-white pt-4 text-center text-sm text-slate-600">
             A kiadvány a „Táncház-Népzene 2026” hanglemezpályázat nyerteseinek hangfelvételeit tartalmazza.
 This album presents winners of the „Dance House – Folk Music 2026” record competition.
 
