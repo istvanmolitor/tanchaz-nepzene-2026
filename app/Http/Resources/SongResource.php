@@ -18,6 +18,8 @@ class SongResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'region' => $this->region,
+            'title_en' => $this->title_en,
+            'region_en' => $this->region_en,
             'artist' => $this->artist,
             'playUrl' => asset('waves/'.rawurlencode($this->file_name)),
             'downloadUrl' => asset('waves/'.rawurlencode($this->file_name)),

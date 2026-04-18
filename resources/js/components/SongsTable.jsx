@@ -19,6 +19,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                         <tr>
                             <th className="w-12 px-2 py-3 font-semibold text-white border-r border-brand-accent">Nyitás</th>
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Zene címe</th>
+                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Angol cím</th>
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Előadó</th>
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Lejátszás</th>
                             <th className="px-4 py-3 font-semibold text-white text-center">Letöltés</th>
@@ -46,6 +47,9 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">
                                             <b>{song.title}</b> {song.region && `(${song.region})`}
                                         </td>
+                                        <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">
+                                            <b>{song.title_en}</b> {song.region_en && `(${song.region_en})`}
+                                        </td>
                                         <td className="px-4 py-3 text-slate-700 border-r border-brand-accent">{song.artist}</td>
                                         <td className="px-4 py-3 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
@@ -64,7 +68,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
 
                                     {isExpanded && (
                                         <tr id={`lyrics-${song.id}`} className="bg-transparent border-b-4 border-brand-primary">
-                                            <td colSpan={5} className="bg-transparent">
+                                            <td colSpan={6} className="bg-transparent">
                                                 <div className=" p-4 border border-brand-secondary w-fit bg-white">
                                                     <p className="text-xs  font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
                                                     <div
