@@ -2,6 +2,12 @@ import React from 'react';
 import Header from './Header.jsx';
 import AudioPlayer from './AudioPlayer';
 
+const DownloadIcon = () => (
+    <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,16l-5-5,1.4-1.5,2.6,2.6V4h2v8.2l2.6-2.6,1.4,1.5-5,5ZM6,20c-.6,0-1-.2-1.4-.6s-.6-.9-.6-1.4v-3h2v3h12v-3h2v3c0,.6-.2,1-.6,1.4s-.9.6-1.4.6H6Z"/>
+    </svg>
+);
+
 function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
     return (
         <div className="overflow-x-auto">
@@ -13,17 +19,17 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Zene címe</th>
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Előadó</th>
                             <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Lejátszás</th>
-                            <th className="px-4 py-3 font-semibold text-white">Letöltés</th>
+                            <th className="px-4 py-3 font-semibold text-white text-center">Letöltés</th>
                         </tr>
                     </thead>
-                    <tbody className="bg-white">
+                    <tbody>
                         {filteredSongs.map((song) => {
                             const isExpanded = expandedSongIds.includes(song.id);
 
                             return (
                                 <React.Fragment key={song.id}>
-                                    <tr className={`align-middle ${!isExpanded ? 'border-b-4 border-brand-primary' : ''}`}>
-                                        <td className="px-2 py-3 border-r border-brand-accent">
+                                    <tr className="align-middle border-b-4 bg-white border-brand-primary">
+                                        <td className="px-2 py-3 border-r border-brand-accent text-center">
                                             <button
                                                 type="button"
                                                 onClick={() => toggleLyrics(song.id)}
@@ -52,24 +58,27 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <td className="px-4 py-3 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
                                         </td>
-                                        <td className="px-4 py-3">
+                                        <td className="px-4 py-3 text-center">
                                             <a
                                                 href={song.downloadUrl}
                                                 download
-                                                className="inline-flex rounded-md bg-slate-900 px-3 py-2 text-xs font-medium text-white hover:bg-slate-700"
+                                                className="inline-flex h-8 w-8 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
+                                                title="Letöltés"
                                             >
-                                                Letöltés
+                                                <DownloadIcon />
                                             </a>
                                         </td>
                                     </tr>
 
                                     {isExpanded && (
-                                        <tr id={`lyrics-${song.id}`} className="bg-slate-50 border-b-4 border-brand-primary">
-                                            <td colSpan={5} className="px-4 py-4">
-                                                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
-                                                <p className="mt-2 whitespace-pre-line text-sm text-slate-700">
-                                                    {song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.'}
-                                                </p>
+                                        <tr id={`lyrics-${song.id}`} className="bg-transparent border-b-4 border-brand-primary">
+                                            <td colSpan={5} className="bg-transparent">
+                                                <div className=" p-4 border border-brand-secondary w-fit bg-white">
+                                                    <p className="text-xs  font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
+                                                    <p className="mt-2 whitespace-pre-line text-sm text-slate-700">
+                                                        {song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.'}
+                                                    </p>
+                                                </div>
                                             </td>
                                         </tr>
                                     )}
