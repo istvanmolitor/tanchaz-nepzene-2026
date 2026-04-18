@@ -9,6 +9,7 @@ import SearchInput from './components/SearchInput';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import SongsTable from './components/SongsTable';
+import SongCards from './components/SongCards';
 
 function InitialPageLoader() {
     return (
@@ -154,11 +155,22 @@ function MusicTableApp() {
                     {!loading && error && <p className="text-sm text-rose-600">{error}</p>}
 
                     {!loading && !error && (
-                        <SongsTable
-                            filteredSongs={songs}
-                            expandedSongIds={expandedSongIds}
-                            toggleLyrics={toggleLyrics}
-                        />
+                        <>
+                            <div className="hidden md:block">
+                                <SongsTable
+                                    filteredSongs={songs}
+                                    expandedSongIds={expandedSongIds}
+                                    toggleLyrics={toggleLyrics}
+                                />
+                            </div>
+                            <div className="block md:hidden">
+                                <SongCards
+                                    filteredSongs={songs}
+                                    expandedSongIds={expandedSongIds}
+                                    toggleLyrics={toggleLyrics}
+                                />
+                            </div>
+                        </>
                     )}
 
                 </div>
