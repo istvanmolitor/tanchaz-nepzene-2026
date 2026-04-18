@@ -20,7 +20,7 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                 const hasLyrics = !!song.lyrics?.trim();
 
                 return (
-                    <div key={song.id} className="bg-white border-b-4 border-brand-primary overflow-hidden">
+                    <div key={song.id} className="bg-white overflow-hidden">
                         <div className="p-4">
                             <div className="flex justify-between items-start mb-2">
                                 <div className="flex items-center gap-2">
