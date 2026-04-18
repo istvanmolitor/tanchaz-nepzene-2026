@@ -12,9 +12,9 @@ import SongsTable from './components/SongsTable';
 
 function InitialPageLoader() {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-[#F4BB91] px-4">
-            <div className="flex flex-col items-center gap-3 text-[#4f407e]">
-                <div className="h-10 w-10 animate-spin rounded-full border-4 border-[#4f407e]/25 border-t-[#4f407e]" />
+        <div className="flex min-h-screen items-center justify-center bg-brand-primary px-4">
+            <div className="flex flex-col items-center gap-3 text-brand-secondary">
+                <div className="h-10 w-10 animate-spin rounded-full border-4 border-brand-secondary/25 border-t-brand-secondary" />
                 <p className="text-sm font-semibold tracking-wide uppercase">Betöltés...</p>
             </div>
         </div>
@@ -145,7 +145,7 @@ function MusicTableApp() {
             <div className="max-w-6xl mx-auto">
                 <Header />
 
-                <div className="mx-auto w-full bg-[#F4BB91] p-6">
+                <div className="mx-auto w-full bg-brand-primary p-6">
 
                     <SearchInput value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
 

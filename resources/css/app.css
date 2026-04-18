@@ -9,6 +9,10 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-brand-primary: #F4BB91;
+    --color-brand-secondary: #4f407e;
+    --color-brand-accent: #533f80;
 }
 
 .audio-player {
@@ -51,14 +55,14 @@
     margin: 0;
     height: 0.1875rem;
     border-radius: 9999px;
-    background: #4f407e;
+    background: var(--color-brand-secondary);
     cursor: pointer;
 }
 
 .audio-player__progress::-webkit-slider-runnable-track {
     height: 0.1875rem;
     border-radius: 9999px;
-    background: #4f407e;
+    background: var(--color-brand-secondary);
 }
 
 .audio-player__progress::-webkit-slider-thumb {
@@ -69,14 +73,14 @@
     margin-top: -0.21875rem;
     border-radius: 9999px;
     border: 0;
-    background: #4f407e;
+    background: var(--color-brand-secondary);
 }
 
 .audio-player__progress::-moz-range-track {
     height: 0.1875rem;
     border-radius: 9999px;
     border: 0;
-    background: #4f407e;
+    background: var(--color-brand-secondary);
 }
 
 .audio-player__progress::-moz-range-thumb {
@@ -84,7 +88,7 @@
     height: 0.625rem;
     border-radius: 9999px;
     border: 0;
-    background: #4f407e;
+    background: var(--color-brand-secondary);
 }
 
 .audio-player__progress--idle::-webkit-slider-thumb {

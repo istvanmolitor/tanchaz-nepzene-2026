@@ -7,23 +7,23 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
         <div className="overflow-x-auto">
             <div className="min-w-[56rem]">
                 <table className="w-full divide-y divide-slate-200 text-left text-sm">
-                    <thead className="bg-slate-50">
+                    <thead className="bg-brand-accent border-b-4 border-brand-primary">
                         <tr>
-                            <th className="w-12 px-2 py-3 font-semibold text-slate-700">Nyitás</th>
-                            <th className="px-4 py-3 font-semibold text-slate-700">Zene címe</th>
-                            <th className="px-4 py-3 font-semibold text-slate-700">Előadó</th>
-                            <th className="px-4 py-3 font-semibold text-slate-700">Lejátszás</th>
-                            <th className="px-4 py-3 font-semibold text-slate-700">Letöltés</th>
+                            <th className="w-12 px-2 py-3 font-semibold text-white border-r border-brand-accent">Nyitás</th>
+                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Zene címe</th>
+                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Előadó</th>
+                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Lejátszás</th>
+                            <th className="px-4 py-3 font-semibold text-white">Letöltés</th>
                         </tr>
                     </thead>
-                    <tbody className="divide-y divide-slate-100 bg-white">
+                    <tbody className="bg-white">
                         {filteredSongs.map((song) => {
                             const isExpanded = expandedSongIds.includes(song.id);
 
                             return (
                                 <React.Fragment key={song.id}>
-                                    <tr className="align-middle">
-                                        <td className="px-2 py-3">
+                                    <tr className={`align-middle ${!isExpanded ? 'border-b-4 border-brand-primary' : ''}`}>
+                                        <td className="px-2 py-3 border-r border-brand-accent">
                                             <button
                                                 type="button"
                                                 onClick={() => toggleLyrics(song.id)}
@@ -47,9 +47,9 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                                 </svg>
                                             </button>
                                         </td>
-                                        <td className="px-4 py-3 text-slate-900">{song.title}</td>
-                                        <td className="px-4 py-3 text-slate-700">{song.artist}</td>
-                                        <td className="px-4 py-3">
+                                        <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">{song.title}</td>
+                                        <td className="px-4 py-3 text-slate-700 border-r border-brand-accent">{song.artist}</td>
+                                        <td className="px-4 py-3 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
                                         </td>
                                         <td className="px-4 py-3">
@@ -64,7 +64,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                     </tr>
 
                                     {isExpanded && (
-                                        <tr id={`lyrics-${song.id}`} className="bg-slate-50">
+                                        <tr id={`lyrics-${song.id}`} className="bg-slate-50 border-b-4 border-brand-primary">
                                             <td colSpan={5} className="px-4 py-4">
                                                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
                                                 <p className="mt-2 whitespace-pre-line text-sm text-slate-700">
