@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from './Header.jsx';
 import AudioPlayer from './AudioPlayer';
+import ToggleButton from './ToggleButton.jsx';
 
 const DownloadIcon = () => (
     <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12,16l-5-5,1.4-1.5,2.6,2.6V4h2v8.2l2.6-2.6,1.4,1.5-5,5ZM6,20c-.6,0-1-.2-1.4-.6s-.6-.9-.6-1.4v-3h2v3h12v-3h2v3c0,.6-.2,1-.6,1.4s-.9.6-1.4.6H6Z"/>
     </svg>
 );
+
 
 function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
     return (
@@ -23,35 +25,23 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredSongs.map((song) => {
+                        {filteredSongs.map((song, index) => {
                             const isExpanded = expandedSongIds.includes(song.id);
+                            const hasLyrics = !!song.lyrics?.trim();
 
                             return (
                                 <React.Fragment key={song.id}>
                                     <tr className="align-middle border-b-4 bg-white border-brand-primary">
                                         <td className="px-2 py-3 border-r border-brand-accent text-center">
-                                            <button
-                                                type="button"
-                                                onClick={() => toggleLyrics(song.id)}
-                                                aria-expanded={isExpanded}
-                                                aria-controls={`lyrics-${song.id}`}
-                                                className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-slate-300 text-slate-700 transition hover:bg-slate-100"
-                                            >
-                                                <svg
-                                                    className={`h-4 w-4 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
-                                                    viewBox="0 0 20 20"
-                                                    fill="none"
-                                                    aria-hidden="true"
-                                                >
-                                                    <path
-                                                        d="M6 8l4 4 4-4"
-                                                        stroke="currentColor"
-                                                        strokeWidth="1.8"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                </svg>
-                                            </button>
+                                            <div className="flex flex-col items-center gap-1">
+                                                <span className="text-xs font-medium text-slate-500">{index + 1}.</span>
+                                                <ToggleButton
+                                                    isExpanded={isExpanded}
+                                                    hasLyrics={hasLyrics}
+                                                    onClick={toggleLyrics}
+                                                    songId={song.id}
+                                                />
+                                            </div>
                                         </td>
                                         <td className="px-4 py-3 text-slate-900 border-r border-brand-accent">{song.title}</td>
                                         <td className="px-4 py-3 text-slate-700 border-r border-brand-accent">{song.artist}</td>

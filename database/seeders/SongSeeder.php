@@ -18,6 +18,7 @@ class SongSeeder extends Seeder
             ['title' => 'Hej Dunarol', 'artist' => 'Tanchaz Trio', 'file_name' => 'tanchaz-trio-hej-dunarol.wav'],
             ['title' => 'Piros Alma', 'artist' => 'Nepi Quartet', 'file_name' => 'nepi-quartet-piros-alma.wav'],
             ['title' => 'Ritmus a teren', 'artist' => 'Bogracs Beats', 'file_name' => 'bogracs-beats-ritmus-a-teren.wav'],
+            ['title' => 'Nincs dalszoveg', 'artist' => 'Silent Artist', 'file_name' => 'silent-artist-nincs-dalszoveg.wav'],
         ];
 
         foreach ($songs as $song) {
