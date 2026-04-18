@@ -139,7 +139,7 @@ function MusicTableApp() {
 
     return (
         <div
-            className="min-h-screen bg-cover bg-center bg-no-repeat px-4 py-8"
+            className="min-h-screen bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="max-w-6xl mx-auto">
