@@ -65,9 +65,10 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                             <td colSpan={5} className="bg-transparent">
                                                 <div className=" p-4 border border-brand-secondary w-fit bg-white">
                                                     <p className="text-xs  font-semibold uppercase tracking-wide text-slate-500">Dalszöveg</p>
-                                                    <p className="mt-2 whitespace-pre-line text-sm text-slate-700">
-                                                        {song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.'}
-                                                    </p>
+                                                    <div 
+                                                        className="mt-2 text-sm text-slate-700"
+                                                        dangerouslySetInnerHTML={{ __html: song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.' }}
+                                                    />
                                                 </div>
                                             </td>
                                         </tr>
