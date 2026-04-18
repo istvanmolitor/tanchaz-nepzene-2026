@@ -12,6 +12,7 @@ class Song extends Model
         'title_en',
         'region_en',
         'artist',
+        'length',
         'file_name',
         'lyrics',
     ];

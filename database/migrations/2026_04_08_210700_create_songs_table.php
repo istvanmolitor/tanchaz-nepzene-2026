@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title_en');
             $table->string('region_en');
             $table->string('artist');
+            $table->string('length')->nullable();
             $table->string('file_name');
             $table->text('lyrics')->nullable();
             $table->timestamps();
