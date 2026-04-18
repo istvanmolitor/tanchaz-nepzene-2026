@@ -1,14 +1,14 @@
 import React from 'react';
 
 const ArrowDropDown = () => (
-    <svg className="h-16 w-16 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg className="h-10 w-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12,15l-5-5h10l-5,5Z"/>
     </svg>
 );
 
 
 const ArrowDropDownDisable = () => (
-    <svg className="h-16 w-16 fill-[#b3b3b3]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg className="h-10 w-10 fill-slate-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M12,15l-5-5h10l-5,5Z"/>
     </svg>
 );

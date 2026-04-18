@@ -3,7 +3,7 @@ import React from 'react';
 function SearchInput({ value, onChange }) {
     return (
         <div className="mb-5 flex items-center justify-end gap-2">
-            <label htmlFor="search" className="text-sm font-medium text-slate-700">
+            <label htmlFor="search" className="text-sm font-medium text-white md:text-slate-700">
                 Keresés:
             </label>
             <input
