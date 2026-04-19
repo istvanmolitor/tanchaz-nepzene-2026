@@ -23,7 +23,7 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                     <div key={song.id} className="bg-white overflow-hiddenborder-slate-100">
                         <div className="flex">
                             {/* Bal oldali sáv */}
-                            <div className="w-12 flex-shrink-0 flex flex-col items-center pt-4 gap-4 border-r border-[#7e6fa0]">
+                            <div className="w-12 flex-shrink-0 flex flex-col items-center justify-between pt-4 border-r border-[#7e6fa0]">
                                 <span className="text-xs font-bold text-slate-400">{index + 1}.</span>
                                 <ToggleButton
                                     isExpanded={isExpanded}
