@@ -120,14 +120,22 @@ function AudioPlayer({ src }) {
             <audio ref={audioRef} preload="none" src={src} />
 
             <div className="audio-player__controls">
-                <button type="button" className="audio-player__button" onClick={handlePlayPause} aria-label={isPlaying ? 'Szünet' : 'Lejátszás'}>
-                    <img src={isPlaying ? pauseIcon : playIcon} alt="" aria-hidden="true" className="audio-player__icon" />
-                </button>
+                <button
+                    type="button"
+                    className="audio-player__button"
+                    onClick={handlePlayPause}
+                    aria-label={isPlaying ? 'Szünet' : 'Lejátszás'}
+                    style={{ backgroundImage: `url(${isPlaying ? pauseIcon : playIcon})` }}
+                />
 
                 {(isPlaying || hasStarted) && (
-                    <button type="button" className="audio-player__button" onClick={handleStop} aria-label="Leállítás">
-                        <img src={stopIcon} alt="" aria-hidden="true" className="audio-player__icon" />
-                    </button>
+                    <button
+                        type="button"
+                        className="audio-player__button"
+                        onClick={handleStop}
+                        aria-label="Leállítás"
+                        style={{ backgroundImage: `url(${stopIcon})` }}
+                    />
                 )}
             </div>
 

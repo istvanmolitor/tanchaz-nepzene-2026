@@ -7,8 +7,8 @@
 @source '../**/*.jsx';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Adobe Garamond Pro', 'Garamond', serif;
+    --font-sans: var(--font-serif);
 
     --color-brand-primary: #F4BB91;
     --color-brand-secondary: #4f407e;
@@ -17,10 +17,9 @@
 
 .audio-player {
     display: flex;
-    width: 25rem;
+    width: 150px;
     max-width: 100%;
     align-items: center;
-    gap: 0.625rem;
 }
 
 .audio-player__controls {
@@ -34,18 +33,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 0;
-    background: transparent;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 0;
     cursor: pointer;
-}
-
-.audio-player__icon {
-    display: block;
-    width: 4.5rem;
-    height: 4.5rem;
 }
 
 .audio-player__progress {
