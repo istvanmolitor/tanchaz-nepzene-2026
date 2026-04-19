@@ -42,7 +42,7 @@ class SongSeeder extends Seeder
                 'region_en' => $song['region_en'] ?? '',
                 'artist' => $song['artist'],
                 'length' => $song['length'] ?? null,
-                'file_name' => $song['file_name'] ?? "{$id}.mp3",
+                'file_name' => $song['file_name'],
                 'lyrics' => $lyrics,
             ]);
         }

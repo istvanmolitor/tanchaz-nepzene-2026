@@ -5,9 +5,9 @@
         "region": "Mezőség",
         "title_en": "Folk songs of Sic from Kallós’s collection",
         "region_en": "Transylvanian Plain",
-        "artist": "Almási Kamilla – ének / voice",
+        "artist": "Almási Kamilla – ének \/ voice",
         "length": "4:06",
-        "file_name": "almasi-kamilla.wav"
+        "file_name": "almasi-kamilla.wav"//
     },
     {
         "id": "2",
@@ -15,8 +15,9 @@
         "region": "Kis-Szamos mente",
         "title_en": "Dance tunes from Bonţida",
         "region_en": "Kis-Szamos Valley, Transylvania",
-        "artist": "Tuba Örs és zenekara / Örs Tuba and his Band:\nBácsi Johanna – ének / voice, Tuba Örs – hegedű I-II. / violin I-II., Varga Zaránd – brácsa / viola, Bakos Botond – cimbalom / cymbalom, Nagy Bálint – nagybőgő / double bass",
-        "length": "5:45"
+        "artist": "Tuba Örs és zenekara \/ Örs Tuba and his Band:\nBácsi Johanna – ének \/ voice, Tuba Örs – hegedű I-II. \/ violin I-II., Varga Zaránd – brácsa \/ viola, Bakos Botond – cimbalom \/ cymbalom, Nagy Bálint – nagybőgő \/ double bass",
+        "length": "5:45",
+        "file_name": "tuba-ors-es-zenekara-5-mix.wav"
     },
     {
         "id": "3",
@@ -24,8 +25,9 @@
         "region": "Válaszút, Kis-Szamos mente",
         "title_en": "Folk songs of Máriskó Varró",
         "region_en": "Răscruci, Kis-Szamos Valley, Transylvania",
-        "artist": "Sass Éva – ének / voice",
-        "length": "3:53"
+        "artist": "Sass Éva – ének \/ voice",
+        "length": "3:53",
+        "file_name": "sass-eva.wav"
     },
     {
         "id": "4",
@@ -33,8 +35,9 @@
         "region": "Bálványosváralja, Észak-Mezőség",
         "title_en": "In memory of flute player Balázs Réti",
         "region_en": "Unguraş, Transylvania",
-        "artist": "Mokos Csongor – furulya / shepherd’s flute",
-        "length": "4:28"
+        "artist": "Mokos Csongor – furulya \/ shepherd’s flute",
+        "length": "4:28",
+        "file_name": "mokos-csongor.wav"
     },
     {
         "id": "5",
@@ -42,8 +45,9 @@
         "region": "",
         "title_en": "Wedding songs from Zobor Region",
         "region_en": "Slovakia",
-        "artist": "Bohák Emese – ének / voice",
-        "length": "3:25"
+        "artist": "Bohák Emese – ének \/ voice",
+        "length": "3:25",
+        "file_name": "bohak-emese-enek-voice.mp3"//
     },
     {
         "id": "6",
@@ -51,8 +55,9 @@
         "region": "",
         "title_en": "Bagpipe tunes from Ipoly Valley",
         "region_en": "Northern Hungary",
-        "artist": "Tóth Andor – duda / bagpipe",
-        "length": "4:54"
+        "artist": "Tóth Andor – duda \/ bagpipe",
+        "length": "4:54",
+        "file_name": "toth-andor-dudas.wav"
     },
     {
         "id": "7",
@@ -60,8 +65,9 @@
         "region": "",
         "title_en": "Folk songs from Aiud Region",
         "region_en": "Transylvania",
-        "artist": "Imre Boglárka – ének / voice",
-        "length": "2:51"
+        "artist": "Imre Boglárka – ének \/ voice",
+        "length": "2:51",
+        "file_name": "imre-boglarka.wav"
     },
     {
         "id": "8",
@@ -69,9 +75,9 @@
         "region": "Kis-Küküllő mente",
         "title_en": "Gypsy tunes from Ceuaş",
         "region_en": "Târnava Mică Region, Transylvania",
-        "artist": "Bauer Krisztina – ének / voice, Juhász András – hegedű / violin, Böröcz Ákos – kontra / 3 stringed viola, Valjer András – nagybőgő / double bass",
+        "artist": "Bauer Krisztina – ének \/ voice, Juhász András – hegedű \/ violin, Böröcz Ákos – kontra \/ 3 stringed viola, Valjer András – nagybőgő \/ double bass",
         "length": "7:32",
-        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"
+        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"//
     },
     {
         "id": "9",
@@ -79,8 +85,9 @@
         "region": "Fülöp, Szabolcs vm.",
         "title_en": "Pub, pub, pub of Debrecen…",
         "region_en": "Northeastern Hungary",
-        "artist": "Ladányi Benedek – ének / voice",
-        "length": "2:01"
+        "artist": "Ladányi Benedek – ének \/ voice",
+        "length": "2:01",
+        "file_name": "ladanyi-benedek.wav"
     },
     {
         "id": "10",
@@ -88,8 +95,9 @@
         "region": "Fábiánsebestyén, Dél-Alföld",
         "title_en": "Based on the play by József Kiss",
         "region_en": "Southern Great Plain",
-        "artist": "Szerényi Domokos – tekerő / hurdy-gurdy",
-        "length": "3:13"
+        "artist": "Szerényi Domokos – tekerő \/ hurdy-gurdy",
+        "length": "3:13",
+        "file_name": "szerenyi-domokos.wav"
     },
     {
         "id": "11",
@@ -97,8 +105,9 @@
         "region": "Szentegyházasfalu, Udvarhelyszék",
         "title_en": "Remember, you fallible man…",
         "region_en": "Vlăhiţa, Transylvania",
-        "artist": "Kovács Abigél – ének / voice",
-        "length": "2:17"
+        "artist": "Kovács Abigél – ének \/ voice",
+        "length": "2:17",
+        "file_name": "kovacs-abigel.wav"
     },
     {
         "id": "12",
@@ -106,8 +115,9 @@
         "region": "Udvarhelyszék",
         "title_en": " Folk tunes from Mihăileni",
         "region_en": "Transylvania",
-        "artist": "Tóth Andor – furulya / shepherd’s flute",
-        "length": "4:28"
+        "artist": "Tóth Andor – furulya \/ shepherd’s flute",
+        "length": "4:28",
+        "file_name": "toth-andor-furulyas.wav"
     },
     {
         "id": "13",
@@ -115,8 +125,9 @@
         "region": "Gyimesközéplok",
         "title_en": "Lamentation song from Ghimeş",
         "region_en": "Transylvania",
-        "artist": "Czeilinger Izabella – ének / voice",
-        "length": "2:23"
+        "artist": "Czeilinger Izabella – ének \/ voice",
+        "length": "2:23",
+        "file_name": "czeilinger-izabella.wav"
     },
     {
         "id": "14",
@@ -124,8 +135,9 @@
         "region": "Hidegségpataka, Gyimes",
         "title_en": "Dance tunes from Valea Rece",
         "region_en": "Ghimeş, Transylvania",
-        "artist": "Tátorján népzenei együttes / Tátorján Folk Music Band: Merkovity Anna – hegedű / violin, Zöldi Márton – gardon / gardon",
-        "length": "3:10"
+        "artist": "Tátorján népzenei együttes \/ Tátorján Folk Music Band: Merkovity Anna – hegedű \/ violin, Zöldi Márton – gardon \/ gardon",
+        "length": "3:10",
+        "file_name": "tatorjan.wav"
     },
     {
         "id": "15",
@@ -133,9 +145,9 @@
         "region": "",
         "title_en": "Lamentation songs from Gyergyó Region ",
         "region_en": "Transylvania",
-        "artist": "Antal Csenge – ének / voice",
+        "artist": "Antal Csenge – ének \/ voice",
         "length": "3:24",
-        "file_name": "antal-csenge.wav"
+        "file_name": "antal-csenge.wav"//
     },
     {
         "id": "16",
@@ -143,8 +155,9 @@
         "region": "Gyimes",
         "title_en": "Lamentation song and dance tunes from Ghimeş",
         "region_en": "Transylvania",
-        "artist": "Dudás Eszter – hegedű / violin, Kiss Annamária – ének, gardon / voice, gardon",
-        "length": "7:09"
+        "artist": "Dudás Eszter – hegedű \/ violin, Kiss Annamária – ének, gardon \/ voice, gardon",
+        "length": "7:09",
+        "file_name": "kiss-annamaria-dudas-eszter.wav"
     },
     {
         "id": "17",
@@ -152,8 +165,9 @@
         "region": "",
         "title_en": "Folk songs from Sălaj",
         "region_en": "",
-        "artist": "Szekeres Kamilla Apollónia – ének / voice",
-        "length": "3:10"
+        "artist": "Szekeres Kamilla Apollónia – ének \/ voice",
+        "length": "3:10",
+        "file_name": "szekeres-kamilla-apollonia.wav"
     },
     {
         "id": "18",
@@ -161,7 +175,8 @@
         "region": "Mezőség",
         "title_en": "Romanian dance tunes from Palatca",
         "region_en": "Transylvania",
-        "artist": "Magyarpalatkai banda / Magyarpalatka Band:\nCodoba Martin „Florin” – hegedű / violin, Codoba Florin – hegedű / violin, Radac Mihai „Remus” – kontra / 3 stringed viola, Codoba Ignaţ Marius – kontra / 3 stringed viola, Szabó Szilárd – nagybőgő / double bass",
-        "length": "7:48"
+        "artist": "Magyarpalatkai banda \/ Magyarpalatka Band:\nCodoba Martin „Florin” – hegedű \/ violin, Codoba Florin – hegedű \/ violin, Radac Mihai „Remus” – kontra \/ 3 stringed viola, Codoba Ignaţ Marius – kontra \/ 3 stringed viola, Szabó Szilárd – nagybőgő \/ double bass",
+        "length": "7:48",
+        "file_name": "magyarpalatkai-banda-5-mix.wav"
     }
 ]
