@@ -20,10 +20,10 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                 const hasLyrics = !!song.lyrics?.trim();
 
                 return (
-                    <div key={song.id} className="bg-white overflow-hidden border-b border-slate-100 last:border-b-0">
+                    <div key={song.id} className="bg-white overflow-hiddenborder-slate-100">
                         <div className="flex">
                             {/* Bal oldali sáv */}
-                            <div className="w-12 flex-shrink-0 flex flex-col items-center py-4 gap-4 border-r border-[#7e6fa0]">
+                            <div className="w-12 flex-shrink-0 flex flex-col items-center pt-4 gap-4 border-r border-[#7e6fa0]">
                                 <span className="text-xs font-bold text-slate-400">{index + 1}.</span>
                                 <ToggleButton
                                     isExpanded={isExpanded}
@@ -34,8 +34,8 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                             </div>
 
                             {/* Jobb oldali tartalom */}
-                            <div className="flex-1 p-4 flex flex-col">
-                                <div className="mb-2">
+                            <div className="flex-1 flex flex-col">
+                                <div className="mb-2 pt-4 px-4">
                                     <h3 className="font-bold text-slate-900 leading-tight">
                                         {song.title} {song.region && <span className="text-sm font-normal text-slate-600">({song.region})</span>}
                                     </h3>
@@ -46,24 +46,24 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                     )}
                                 </div>
 
-                                <div className="mb-4">
+                                <div className="mb-4 p-4">
                                     <p className="text-sm text-slate-700 font-medium">{song.artist}</p>
                                 </div>
 
-                                <div className="mt-4 flex items-center justify-between gap-4 pt-4 border-t border-slate-100">
+                                <div className="mt-4 flex items-center gap-4">
+                                    <a
+                                        href={song.downloadUrl}
+                                        download
+                                        className="ml-4 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
+                                        title="Letöltés"
+                                    >
+                                        <DownloadIcon />
+                                    </a>
                                     <div className="flex-1">
                                         <AudioPlayer src={song.playUrl} />
                                     </div>
-                                    <div className="flex items-center gap-4 flex-shrink-0">
-                                        <span className="text-xs font-mono text-slate-500">{song.length}</span>
-                                        <a
-                                            href={song.downloadUrl}
-                                            download
-                                            className="inline-flex h-8 w-8 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
-                                            title="Letöltés"
-                                        >
-                                            <DownloadIcon />
-                                        </a>
+                                    <div className="flex-shrink-0 bg-black flex items-center h-[50px]">
+                                        <span className="text-xs font-mono text-slate-500 text-white px-4">{song.length}</span>
                                     </div>
                                 </div>
                             </div>
