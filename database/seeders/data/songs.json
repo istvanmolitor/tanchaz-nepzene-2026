@@ -6,7 +6,8 @@
         "title_en": "Folk songs of Sic from Kallós’s collection",
         "region_en": "Transylvanian Plain",
         "artist": "Almási Kamilla – ének / voice",
-        "length": "4:06"
+        "length": "4:06",
+        "file_name": "almasi-kamilla.wav"
     },
     {
         "id": "2",
@@ -69,7 +70,8 @@
         "title_en": "Gypsy tunes from Ceuaş",
         "region_en": "Târnava Mică Region, Transylvania",
         "artist": "Bauer Krisztina – ének / voice, Juhász András – hegedű / violin, Böröcz Ákos – kontra / 3 stringed viola, Valjer András – nagybőgő / double bass",
-        "length": "7:32"
+        "length": "7:32",
+        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"
     },
     {
         "id": "9",
@@ -132,7 +134,8 @@
         "title_en": "Lamentation songs from Gyergyó Region ",
         "region_en": "Transylvania",
         "artist": "Antal Csenge – ének / voice",
-        "length": "3:24"
+        "length": "3:24",
+        "file_name": "antal-csenge.wav"
     },
     {
         "id": "16",
