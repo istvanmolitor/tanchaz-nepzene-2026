@@ -99,7 +99,14 @@ function MusicTableApp() {
                 }
 
                 const data = await response.json();
-                const songsList = Array.isArray(data) ? data : [];
+                const songsList = Array.isArray(data)
+                    ? data.map((song) => ({
+                        ...song,
+                        artist: typeof song.artist === 'string'
+                            ? song.artist.replace(/\\n/g, '\n')
+                            : song.artist,
+                    }))
+                    : [];
                 const visibleSongIds = new Set(songsList.map((song) => song.id));
 
                 setSongs(songsList);

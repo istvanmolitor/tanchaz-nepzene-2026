@@ -47,7 +47,7 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                 </div>
 
                                 <div className="mb-4 p-4">
-                                    <p className="text-sm text-slate-700 font-medium">{song.artist}</p>
+                                    <p className="text-sm text-slate-700 font-medium whitespace-pre-line">{song.artist}</p>
                                 </div>
 
                                 <div className="mt-4 flex items-center gap-4">

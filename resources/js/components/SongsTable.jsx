@@ -52,7 +52,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <td className="align-top px-3 py-2 text-slate-900 border-r border-brand-accent">
                                             {song.title_en} {song.region_en && `(${song.region_en})`}
                                         </td>
-                                        <td className="align-top px-3 py-2 text-slate-700 border-r border-brand-accent">{song.artist}</td>
+                                        <td className="align-top px-3 py-2 text-slate-700 border-r border-brand-accent whitespace-pre-line">{song.artist}</td>
                                         <td className="align-middle px-3 py-2 text-slate-700 border-r border-brand-accent text-center">{song.length}</td>
                                         <td className="align-middle px-3 py-0 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
