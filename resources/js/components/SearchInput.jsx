@@ -4,7 +4,7 @@ function SearchInput({ value, onChange }) {
     return (
         <div className="mb-5 flex items-center justify-end gap-2">
             <label htmlFor="search" className="text-white md:text-slate-700 text-2xl font-bold">
-                Keresés:
+                KERESÉS
             </label>
             <input
                 id="search"

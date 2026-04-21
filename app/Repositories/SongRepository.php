@@ -22,7 +22,7 @@ class SongRepository
         }
 
         return $songsQuery
-            ->orderBy('title')
+            ->orderBy('id')
             ->get();
     }
 }
