@@ -3,11 +3,10 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="pb-10 mt-6 text-white pt-4 text-center text-xl leading-relaxed text-slate-600">
-            <p>
-            <b className="text-2xl">A kiadvány a „Táncház-Népzene 2026” hanglemezpályázat nyerteseinek hangfelvételeit tartalmazza.
-                This album presents winners of the „Dance House – Folk Music 2026” record competition.</b>
-
-                </p>
+            <p className="text-2xl">
+                A kiadvány a <i>„Táncház-Népzene 2026”</i> hanglemezpályázat nyerteseinek hangfelvételeit tartalmazza.<br/>
+                <i>This album presents winners of the „Dance House – Folk Music 2026” record competition.</i>
+            </p>
             <p>
                 Köszönet a zsűri tagjainak / <i>Special thanks to members of the jury</i>:
                 Agócs Gergely, Árendás Péter, Berta Alexandra, Vavrinecz András.

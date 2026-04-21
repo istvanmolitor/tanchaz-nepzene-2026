@@ -17,9 +17,9 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                 <table className="w-full divide-y divide-slate-200 text-left text-base">
                     <thead className="bg-brand-accent border-b-8 border-brand-primary">
                         <tr>
-                            <th className="w-12 px-2 py-2 font-semibold text-white border-r border-brand-accent">&nbsp;</th>
+                            <th className="w-12 min-w-[50px] px-2 py-2 font-semibold text-white border-r border-brand-accent">&nbsp;</th>
                             <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent" colSpan={2}>Cím</th>
-                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent">Előadó</th>
+                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent min-w-[350px]">Előadó</th>
                             <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent text-center">Hossz</th>
                             <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent">Zenehallgatás</th>
                             <th className="px-3 py-2 font-semibold text-white text-center">Letöltés</th>
@@ -33,7 +33,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                             return (
                                 <React.Fragment key={song.id}>
                                     <tr className="border-b-8 bg-white border-brand-primary">
-                                        <td className="align-top px-2 py-2 border-r border-brand-accent text-center relative h-16">
+                                        <td className="align-top px-2 py-2 border-r border-brand-accent text-center relative h-16 w-12 min-w-[50px]">
                                             <div className="absolute top-2 left-0 right-0 flex justify-center">
                                                 <span className="font-medium text-slate-500">{song.id}.</span>
                                             </div>
@@ -52,7 +52,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <td className="align-top px-3 py-2 text-slate-900 border-r border-brand-accent">
                                             {song.title_en} {song.region_en && `(${song.region_en})`}
                                         </td>
-                                        <td className="align-top px-3 py-2 text-slate-700 border-r border-brand-accent whitespace-pre-line">{song.artist}</td>
+                                        <td className="align-top px-3 py-2 text-slate-700 border-r border-brand-accent whitespace-pre-line min-w-[300px]">{song.artist}</td>
                                         <td className="align-middle px-3 py-2 text-slate-700 border-r border-brand-accent text-center">{song.length}</td>
                                         <td className="align-middle px-3 py-0 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
