@@ -7,7 +7,7 @@
         "region_en": "Transylvanian Plain",
         "artist": "Almási Kamilla – ének \/ voice",
         "length": "4:06",
-        "file_name": "almasi-kamilla.wav"//
+        "file_name": "almasi-kamilla.wav"
     },
     {
         "id": "2",
@@ -47,7 +47,7 @@
         "region_en": "Slovakia",
         "artist": "Bohák Emese – ének \/ voice",
         "length": "3:25",
-        "file_name": "bohak-emese-enek-voice.mp3"//
+        "file_name": "bohak-emese-enek-voice.mp3"
     },
     {
         "id": "6",
@@ -77,7 +77,7 @@
         "region_en": "Târnava Mică Region, Transylvania",
         "artist": "Bauer Krisztina – ének \/ voice, Juhász András – hegedű \/ violin, Böröcz Ákos – kontra \/ 3 stringed viola, Valjer András – nagybőgő \/ double bass",
         "length": "7:32",
-        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"//
+        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"
     },
     {
         "id": "9",
@@ -147,7 +147,7 @@
         "region_en": "Transylvania",
         "artist": "Antal Csenge – ének \/ voice",
         "length": "3:24",
-        "file_name": "antal-csenge.wav"//
+        "file_name": "antal-csenge.wav"
     },
     {
         "id": "16",

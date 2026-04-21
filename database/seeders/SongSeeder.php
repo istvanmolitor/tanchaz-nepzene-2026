@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Song;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\File;
 
 class SongSeeder extends Seeder
@@ -27,11 +28,11 @@ class SongSeeder extends Seeder
 
         foreach ($songsData as $song) {
             $id = $song['id'];
-            $lyricsPath = database_path("seeders/data/lyrics/{$id}.html");
+            $lyricsPath = database_path("seeders/data/lyrics/{$id}.blade.php");
             $lyrics = null;
 
             if (File::exists($lyricsPath)) {
-                $lyrics = File::get($lyricsPath);
+                $lyrics = Blade::render(File::get($lyricsPath));
             }
 
             Song::create([
