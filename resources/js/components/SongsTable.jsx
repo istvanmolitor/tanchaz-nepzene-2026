@@ -61,7 +61,7 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                             <a
                                                 href={song.downloadUrl}
                                                 download
-                                                className="inline-flex h-16 w-16 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100"
+                                                className="inline-flex h-16 w-16 items-center justify-center rounded-md text-slate-700"
                                                 title="Letöltés"
                                             >
                                                 <DownloadIcon />

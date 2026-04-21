@@ -1,29 +1,29 @@
-<p>Verd meg Isten azt a vermet,<br>
+<x-verse>Verd meg Isten azt a vermet,<br>
 Verd meg Isten azt a vermet,<br>
 Melyikbe a rózsám termett,<br>
-Melyikbe a rózsám termett.</p>
+Melyikbe a rózsám termett.</x-verse>
 
-<p>Verd meg Isten azt az egyet,<br>
+<x-verse>Verd meg Isten azt az egyet,<br>
 Verd meg Isten azt az egyet,<br>
 Aki kettőt-hármat szeret,<br>
-Aki kettőt-hármat szeret.</p>
+Aki kettőt-hármat szeret.</x-verse>
 
-<p>Bőg a bárány a nagy hegyen,<br>
+<x-verse>Bőg a bárány a nagy hegyen,<br>
 Bőg a bárány a nagy hegyen,<br>
 Viszik a rózsámat kedden,<br>
-Viszik a rózsámat kedden.</p>
+Viszik a rózsámat kedden.</x-verse>
 
-<p>Megyek a siratójába,<br>
+<x-verse>Megyek a siratójába,<br>
 Megyek a siratójába,<br>
 Búcsúzzak el utoljára,<br>
-Búcsúzzak el utoljára.</p>
+Búcsúzzak el utoljára.</x-verse>
 
-<p>Bőg a bárány a boglya körül,<br>
+<x-verse>Bőg a bárány a boglya körül,<br>
 Bőg a bárány a boglya körül,<br>
 Az én rózsám visszakerül,<br>
-Az én rózsám visszakerül.</p>
+Az én rózsám visszakerül.</x-verse>
 
-<p>Ha visszajön, visszavárom,<br>
+<x-verse>Ha visszajön, visszavárom,<br>
 Ha visszajön, visszavárom,<br>
 Ha pedig nem, nem sajnálom,<br>
-Ha pedig nem, nem sajnálom.</p>
+Ha pedig nem, nem sajnálom.</x-verse>

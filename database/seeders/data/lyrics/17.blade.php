@@ -1,42 +1,42 @@
-<p>1.<br>
+<x-verse>1.<br>
 Adjon Isten, édesanyám, jó estét,<br>
 Hazahoztam ezt a barna menyecskét.<br>
 Nem azért vettem én el, hogy szerettem,<br>
-Szegény voltam, gazdagságot kerestem.</p>
+Szegény voltam, gazdagságot kerestem.</x-verse>
 
-<p>Kék szivárvány karolta át az eget,<br>
+<x-verse>Kék szivárvány karolta át az eget,<br>
 Eltiltották tőlem a szeretőmet.<br>
 Eltiltották, hogy azt nékem nem adják,<br>
-Verje meg az Isten az eltiltóját!</p>
+Verje meg az Isten az eltiltóját!</x-verse>
 
-<p>Édesanyám fölnevelt kend engemet,<br>
+<x-verse>Édesanyám fölnevelt kend engemet,<br>
 Mégse tudja az én bús életemet.<br>
 Mert ha tudná az én bús életemet,<br>
-Éjjel-nappal siratgatna engemet.</p>
+Éjjel-nappal siratgatna engemet.</x-verse>
 
-<p>Átkarolta az eget a szivárvány,<br>
+<x-verse>Átkarolta az eget a szivárvány,<br>
 E világon egyedül vagyok árván.<br>
 Árvaságom tudja meg a nagy ég is,<br>
-Sirat engem a repülő madár is.</p>
+Sirat engem a repülő madár is.</x-verse>
 
-<p>2.<br>
+<x-verse>2.<br>
 Világ, világ, de meguntam magamat,<br>
 Odaadnám magamat a halálnak!<br>
 Odaadnám magamat a halálnak,<br>
-Kit szerettem, nekem avval nem szabad.</p>
+Kit szerettem, nekem avval nem szabad.</x-verse>
 
-<p>Jaj, Istenem, de víg voltam ezelőtt,<br>
+<x-verse>Jaj, Istenem, de víg voltam ezelőtt,<br>
 Míg a babám járt el a kapum előtt.<br>
 De mióta mást választott magának,<br>
-Gyenge szívem a nagy búba megárad.</p>
+Gyenge szívem a nagy búba megárad.</x-verse>
 
-<p>3.<br>
+<x-verse>3.<br>
 Árva vagyok, árva,<br>
 Az Isten is látja.<br>
 Verje meg az egek Ura,<br>
-Ki az árvát bántja!</p>
+Ki az árvát bántja!</x-verse>
 
-<p>Verje meg, verje meg,<br>
+<x-verse>Verje meg, verje meg,<br>
 Veretlen ne hagyja,<br>
 Verje meg az egek Ura,<br>
-Ki az árvát bántja!</p>
+Ki az árvát bántja!</x-verse>

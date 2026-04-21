@@ -1,42 +1,42 @@
-<p>1.<br>
+<x-verse>1.<br>
 Gyergyó felé fehér az ég,<br>
 Édes rózsám, élhetsz-e még?<br>
 Élek szívem, nem hóttam meg,<br>
-Szerencsédre maradtam meg.</p>
+Szerencsédre maradtam meg.</x-verse>
 
-<p>Zúg a harang vasárnapra,<br>
+<x-verse>Zúg a harang vasárnapra,<br>
 Ne várj, rózsám a templomba.<br>
 Szolgálónak nincs vasárnap,<br>
-Éjjel-nappal parancsolnak.</p>
+Éjjel-nappal parancsolnak.</x-verse>
 
-<p>Minden vasárnap délután,<br>
+<x-verse>Minden vasárnap délután,<br>
 Nálam nélkül táncolsz babám.<br>
 Táncolj, babám, ne várj engem,<br>
-Ne kesergesd az én lelkem!</p>
+Ne kesergesd az én lelkem!</x-verse>
 
-<p>2.<br>
+<x-verse>2.<br>
 Anyám, édesanyám,<br>
 Szívem, édesanyám,<br>
 Anyám, édesanyám,<br>
-Fölnevelő dajkám.</p>
+Fölnevelő dajkám.</x-verse>
 
-<p>Mikor ringatgattál<br>
+<x-verse>Mikor ringatgattál<br>
 A ringó bölcsőbe,<br>
 Ringatgattál volna<br>
-Kicsiny koporsóba.</p>
+Kicsiny koporsóba.</x-verse>
 
-<p>Mikor takargattál<br>
+<x-verse>Mikor takargattál<br>
 Gyenge gyolcsruhába,<br>
 Takargattál volna<br>
-Földnek a gyomrába.</p>
+Földnek a gyomrába.</x-verse>
 
-<p>Mikor született volt<br>
+<x-verse>Mikor született volt<br>
 A bánya tetején,<br>
 Eleresztett volna<br>
-Az Orotva vizén.</p>
+Az Orotva vizén.</x-verse>
 
-<p>Hadd ettek volna meg tengernek halai,<br>
-Sirattak volna meg tengernek habjai.</p>
+<x-verse>Hadd ettek volna meg tengernek halai,<br>
+Sirattak volna meg tengernek habjai.</x-verse>
 
-<p>Anyám, édesanyám, szívem, édesanyám,<br>
-Anyám, édesanyám, fölnevelő dajkám.</p>
+<x-verse>Anyám, édesanyám, szívem, édesanyám,<br>
+Anyám, édesanyám, fölnevelő dajkám.</x-verse>

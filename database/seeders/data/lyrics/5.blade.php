@@ -1,56 +1,56 @@
-<p>1.<br>
+<x-verse>1.<br>
 Felnőtt az út mellett két szál majoránna,<br>
 Nem szereti földjét, el akar bujdosni.<br>
-A Naptól, a Holdtól búcsút akar venni.</p>
+A Naptól, a Holdtól búcsút akar venni.</x-verse>
 
-<p>Búcsúzz Anni, búcsúzz anyádtól, apádtól,<br>
+<x-verse>Búcsúzz Anni, búcsúzz anyádtól, apádtól,<br>
 Anyádtól, apádtól a leány barátidtól,<br>
-Leány barátidtól, leány temagadtól.</p>
+Leány barátidtól, leány temagadtól.</x-verse>
 
-<p>Hej, révész, révész, magyar ifjú révész,<br>
-Vigy’ át a hajódon!<br>
+<x-verse>Hej, révész, révész, magyar ifjú révész,<br>
+Vigy' át a hajódon!<br>
 Sötét az idő, homály a felhő,<br>
 Én félek egyedül.<br>
 Uramról maradt egy vékony pejló,<br>
-Azt is neked adom.</p>
+Azt is neked adom.</x-verse>
 
-<p>Nem kell kedvemnek, szép szerelmemnek,<br>
-Bánat a szívemnek.</p>
+<x-verse>Nem kell kedvemnek, szép szerelmemnek,<br>
+Bánat a szívemnek.</x-verse>
 
-<p>Hej, révész, révész, ifjú, magyar révész,<br>
-Vigy’ át a hajódon, vigy’ át a hajódon!</p>
+<x-verse>Hej, révész, révész, ifjú, magyar révész,<br>
+Vigy' át a hajódon, vigy' át a hajódon!</x-verse>
 
-<p>Neked adom, neked, bizony neked adom<br>
-Szép leány magamat, szép leány magamat.</p>
+<x-verse>Neked adom, neked, bizony neked adom<br>
+Szép leány magamat, szép leány magamat.</x-verse>
 
-<p>Az kell kedvemnek, szép szerelmemnek,<br>
-Öröm a szívemnek.</p>
+<x-verse>Az kell kedvemnek, szép szerelmemnek,<br>
+Öröm a szívemnek.</x-verse>
 
-<p>2.<br>
+<x-verse>2.<br>
 Nyisd ki, rózsám, kit bezártál,<br>
 Jelen vagyon, akit vártál,<br>
-Jelen vagyon, akit vártál.</p>
+Jelen vagyon, akit vártál.</x-verse>
 
-<p>Szeretőmnek szeme-szája<br>
+<x-verse>Szeretőmnek szeme-szája<br>
 Többet ér, mint a pajtája,<br>
-Többet ér, mint a pajtája.</p>
+Többet ér, mint a pajtája.</x-verse>
 
-<p>Mert pajtája fekete gyász,<br>
+<x-verse>Mert pajtája fekete gyász,<br>
 De galambom aranykalász,<br>
-De galambom aranykalász.</p>
+De galambom aranykalász.</x-verse>
 
-<p>3.<br>
+<x-verse>3.<br>
 Szerelem virágja felfolyott a fára,<br>
-Nincs kinek leszedni, elhervadt magába.</p>
+Nincs kinek leszedni, elhervadt magába.</x-verse>
 
-<p>Ha szerelem volna, kedvem is úgy volna,<br>
-De szerelem nincsen, bizony kedvem sincsen.</p>
+<x-verse>Ha szerelem volna, kedvem is úgy volna,<br>
+De szerelem nincsen, bizony kedvem sincsen.</x-verse>
 
-<p>Szerelem, szerelem, átkozott gyötrelem,<br>
-Miért nem termettél meg minden falevelen?</p>
+<x-verse>Szerelem, szerelem, átkozott gyötrelem,<br>
+Miért nem termettél meg minden falevelen?</x-verse>
 
-<p>Minden fa levelén, diófa tetején,<br>
-Hogy szakajtott volna minden szegénylegény.</p>
+<x-verse>Minden fa levelén, diófa tetején,<br>
+Hogy szakajtott volna minden szegénylegény.</x-verse>
 
-<p>Én is szakajtottam, de elszalajtottam,<br>
-Utánaszaladtam, de meg nem foghattam.</p>
+<x-verse>Én is szakajtottam, de elszalajtottam,<br>
+Utánaszaladtam, de meg nem foghattam.</x-verse>

@@ -1,44 +1,44 @@
-<p>1.<br>
+<x-verse>1.<br>
 Édesanyám, ha meguntál tartani,<br>
 Vígy el engem a vásárba eladni!<br>
 Adjál oda a legelső kérőmnek,<br>
-Ha nem adtál a régi szeretőmnek!</p>
+Ha nem adtál a régi szeretőmnek!</x-verse>
 
-<p>Végigmentem a keszüi temetőn,<br>
+<x-verse>Végigmentem a keszüi temetőn,<br>
 Elvesztettem piros bársony zsebkendőm.<br>
 Piros bársony zsebkendőmet nem bánom,<br>
-Csak a régi szeretőmet sajnálom.</p>
+Csak a régi szeretőmet sajnálom.</x-verse>
 
-<p>Kihajtottam Virág ökröm a rétre,<br>
+<x-verse>Kihajtottam Virág ökröm a rétre,<br>
 Leveretem a harmatot előle.<br>
 Rég nem hallom Virág ökröm harangját,<br>
-Az én rózsám mással éli világát.</p>
+Az én rózsám mással éli világát.</x-verse>
 
-<p>Magosan repül a daru, szépen szól,<br>
+<x-verse>Magosan repül a daru, szépen szól,<br>
 Haragszik rám az én rózsám, mert nem szól.<br>
 Ha haragszik, haragudjék magába,<br>
-Vesse magát a zavaros Tiszába!</p>
+Vesse magát a zavaros Tiszába!</x-verse>
 
-<p>2.<br>
+<x-verse>2.<br>
 Ha meghalok, meghagyom,<br>
 Leány legyen a papom.<br>
 Leány legyen a papom,<br>
-Menyecske a rektorom.</p>
+Menyecske a rektorom.</x-verse>
 
-<p>Ha te tudnád, amit én,<br>
+<x-verse>Ha te tudnád, amit én,<br>
 Te is sírnál, nemcsak én.<br>
 Keservesebben, mint én,<br>
-Ajnananana…</p>
+Ajnananana…</x-verse>
 
-<p>3.<br>
+<x-verse>3.<br>
 De sok eső, de sok sár,<br>
 De sok legény megcsalt már.<br>
 Ha még ez az egy megcsal,<br>
 Megátkozom, hogy meghal,<br>
-Megátkozom, hogy meghal.</p>
+Megátkozom, hogy meghal.</x-verse>
 
-<p>Ha én eztet tudtam volna,<br>
+<x-verse>Ha én eztet tudtam volna,<br>
 Hogy tavasszal nyílik rózsa.<br>
 Nem volnék már senki rabja,<br>
 Csak az én rózsám galambja,<br>
-Csak az én rózsám galambja.</p>
+Csak az én rózsám galambja.</x-verse>

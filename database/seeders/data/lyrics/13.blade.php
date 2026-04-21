@@ -1,19 +1,19 @@
-<p>Sír a szemem, hull a könnyem,<br>
+<x-verse>Sír a szemem, hull a könnyem,<br>
 Sír a szemem, hull a könnyem.<br>
 Milyen erőst fáj a szívem,<br>
-Milyen erőst fáj a szívem.</p>
+Milyen erőst fáj a szívem.</x-verse>
 
-<p>Fáj a szívem kijel-belül,<br>
+<x-verse>Fáj a szívem kijel-belül,<br>
 Fáj a szívem kijel-belül.<br>
 Bánat szorítja kétfelől,<br>
-Bánat szorítja kétfelől.</p>
+Bánat szorítja kétfelől.</x-verse>
 
-<p>Én Istenem, miért vertél meg,<br>
+<x-verse>Én Istenem, miért vertél meg,<br>
 Én Istenem, miért vertél meg?<br>
 Hátha nem érdemlettem meg,<br>
-Hátha nem érdemlettem meg.</p>
+Hátha nem érdemlettem meg.</x-verse>
 
-<p>Miér’ vertél meg jobban, mint mást,<br>
-Miér’ vertél meg jobban, mint mást?<br>
+<x-verse>Miér' vertél meg jobban, mint mást,<br>
+Miér' vertél meg jobban, mint mást?<br>
 Én se voltam nagyobb hibás,<br>
-Én se voltam nagyobb hibás.</p>
+Én se voltam nagyobb hibás.</x-verse>
