@@ -30,9 +30,11 @@ class SongSeeder extends Seeder
             $id = $song['id'];
             $lyricsPath = database_path("seeders/data/lyrics/{$id}.blade.php");
             $lyrics = null;
+            $lyricsText = null;
 
             if (File::exists($lyricsPath)) {
                 $lyrics = Blade::render(File::get($lyricsPath));
+                $lyricsText = $this->renderLyricsText($lyrics);
             }
 
             Song::create([
@@ -45,9 +47,31 @@ class SongSeeder extends Seeder
                 'length' => $song['length'] ?? null,
                 'file_name' => $song['file_name'],
                 'lyrics' => $lyrics,
+                'lyrics_text' => $lyricsText,
             ]);
         }
 
         $this->command->info(count($songsData) . " dal sikeresen betöltve.");
+    }
+
+    private function renderLyricsText(string $lyrics): ?string
+    {
+        $text = preg_replace([
+            '/<br\s*\/?\s*>/iu',
+            '/<\/p>/iu',
+            '/<\/div>/iu',
+            '/<\/li>/iu',
+            '/<\/h[1-6]>/iu',
+        ], ["\n", "\n\n", "\n\n", "\n", "\n\n"], $lyrics);
+
+        $text = preg_replace('/<li\b[^>]*>/iu', '- ', $text ?? '');
+        $text = strip_tags($text ?? '');
+        $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $text = preg_replace('/\r\n?|\n/u', "\n", $text);
+        $text = implode("\n", array_map(static fn (string $line): string => trim($line), explode("\n", $text ?? '')));
+        $text = preg_replace('/\n{3,}/u', "\n\n", $text);
+        $text = trim($text ?? '');
+
+        return $text !== '' ? $text : null;
     }
 }

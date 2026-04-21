@@ -16,7 +16,8 @@ class SongRepository
             $songsQuery->where(function ($query) use ($normalizedSearch) {
                 $query->whereRaw('LOWER(title) LIKE ?', ["%{$normalizedSearch}%"])
                     ->orWhereRaw('LOWER(title_en) LIKE ?', ["%{$normalizedSearch}%"])
-                    ->orWhereRaw('LOWER(artist) LIKE ?', ["%{$normalizedSearch}%"]);
+                    ->orWhereRaw('LOWER(artist) LIKE ?', ["%{$normalizedSearch}%"])
+                    ->orWhereRaw('LOWER(lyrics_text) LIKE ?', ["%{$normalizedSearch}%"]);
             });
         }
 

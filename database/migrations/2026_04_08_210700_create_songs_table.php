@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('length')->nullable();
             $table->string('file_name');
             $table->text('lyrics')->nullable();
+            $table->text('lyrics_text')->nullable();
             $table->timestamps();
         });
     }
