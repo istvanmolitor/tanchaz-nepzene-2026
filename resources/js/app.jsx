@@ -143,7 +143,7 @@ function MusicTableApp() {
             className="min-h-screen bg-cover bg-top bg-fixed bg-no-repeat"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <div className="max-w-6xl mx-auto">
+            <div className="mx-auto max-w-[1420px]">
                 <Header />
 
                 <div className="mx-auto w-full md:bg-brand-primary p-6">

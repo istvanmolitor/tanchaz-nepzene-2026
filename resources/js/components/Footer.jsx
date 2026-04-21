@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="mt-6 text-white pt-4 text-center text-sm text-slate-600">
+        <footer className="pb-10 mt-6 text-white pt-4 text-center text-xl leading-relaxed text-slate-600">
             <p>
-            <b>A kiadvány a „Táncház-Népzene 2026” hanglemezpályázat nyerteseinek hangfelvételeit tartalmazza.
+            <b className="text-2xl">A kiadvány a „Táncház-Népzene 2026” hanglemezpályázat nyerteseinek hangfelvételeit tartalmazza.
                 This album presents winners of the „Dance House – Folk Music 2026” record competition.</b>
 
                 </p>

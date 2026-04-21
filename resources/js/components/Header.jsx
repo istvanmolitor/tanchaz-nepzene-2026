@@ -23,8 +23,7 @@ function Header() {
                 loading="eager"
                 decoding="sync"
             />
-                <div className="text-white text-center">Szerkesztette / <i>Editor:</i> Árendás Péter
-                </div>
+                <div className="text-white text-center text-lg md:text-xl">Szerkesztette / <i>Editor:</i> Árendás Péter</div>
             </div>
         </div>
     );

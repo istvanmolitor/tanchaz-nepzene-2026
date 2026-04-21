@@ -14,15 +14,15 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
     return (
         <div className="overflow-x-auto">
             <div className="min-w-[56rem]">
-                <table className="w-full divide-y divide-slate-200 text-left text-sm">
-                    <thead className="bg-brand-accent border-b-4 border-brand-primary">
+                <table className="w-full divide-y divide-slate-200 text-left text-base">
+                    <thead className="bg-brand-accent border-b-8 border-brand-primary">
                         <tr>
-                            <th className="w-12 px-2 py-3 font-semibold text-white border-r border-brand-accent">&nbsp;</th>
-                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent" colSpan={2}>Cím</th>
-                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Előadó</th>
-                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent text-center">Hossz</th>
-                            <th className="px-4 py-3 font-semibold text-white border-r border-brand-accent">Lejátszás</th>
-                            <th className="px-4 py-3 font-semibold text-white text-center">Letöltés</th>
+                            <th className="w-12 px-2 py-2 font-semibold text-white border-r border-brand-accent">&nbsp;</th>
+                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent" colSpan={2}>Cím</th>
+                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent">Előadó</th>
+                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent text-center">Hossz</th>
+                            <th className="px-3 py-2 font-semibold text-white border-r border-brand-accent">Lejátszás</th>
+                            <th className="px-3 py-2 font-semibold text-white text-center">Letöltés</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,12 +32,12 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
 
                             return (
                                 <React.Fragment key={song.id}>
-                                    <tr className="border-b-4 bg-white border-brand-primary">
-                                        <td className="align-top px-2 py-3 border-r border-brand-accent text-center relative h-16">
-                                            <div className="absolute top-1 left-0 right-0 flex justify-center">
-                                                <span className="text-xs font-medium text-slate-500">{index + 1}.</span>
+                                    <tr className="border-b-8 bg-white border-brand-primary">
+                                        <td className="align-top px-2 py-2 border-r border-brand-accent text-center relative h-16">
+                                            <div className="absolute top-2 left-0 right-0 flex justify-center">
+                                                <span className="font-medium text-slate-500">{index + 1}.</span>
                                             </div>
-                                            <div className="absolute bottom-1 left-0 right-0 flex justify-center">
+                                            <div className="absolute bottom-0 left-0 right-0 flex justify-center">
                                                 <ToggleButton
                                                     isExpanded={isExpanded}
                                                     hasLyrics={hasLyrics}
@@ -46,18 +46,18 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                                 />
                                             </div>
                                         </td>
-                                        <td className="align-top px-4 py-3 text-slate-900 border-r border-brand-accent">
+                                        <td className="align-top px-3 py-2 text-slate-900 border-r border-brand-accent">
                                             <b>{song.title}</b> {song.region && `(${song.region})`}
                                         </td>
-                                        <td className="align-top px-4 py-3 text-slate-900 border-r border-brand-accent">
+                                        <td className="align-top px-3 py-2 text-slate-900 border-r border-brand-accent">
                                             {song.title_en} {song.region_en && `(${song.region_en})`}
                                         </td>
-                                        <td className="align-top px-4 py-3 text-slate-700 border-r border-brand-accent">{song.artist}</td>
-                                        <td className="align-middle px-4 py-3 text-slate-700 border-r border-brand-accent text-center">{song.length}</td>
-                                        <td className="align-middle px-4 py-3 border-r border-brand-accent">
+                                        <td className="align-top px-3 py-2 text-slate-700 border-r border-brand-accent">{song.artist}</td>
+                                        <td className="align-middle px-3 py-2 text-slate-700 border-r border-brand-accent text-center">{song.length}</td>
+                                        <td className="align-middle px-3 py-0 border-r border-brand-accent">
                                             <AudioPlayer src={song.playUrl} />
                                         </td>
-                                        <td className="align-middle px-4 py-3 text-center">
+                                        <td className="align-middle px-3 py-2 text-center">
                                             <a
                                                 href={song.downloadUrl}
                                                 download
