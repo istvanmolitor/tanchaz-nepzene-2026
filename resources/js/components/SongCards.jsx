@@ -70,21 +70,21 @@ function SongCards({ filteredSongs, expandedSongIds, toggleLyrics }) {
                         </div>
 
                         {isExpanded && (
-                            <div id={`lyrics-${song.id}`} className="bg-brand-primary/10 border-t border-brand-primary p-4">
-                                <div className="flex justify-between items-center mb-2">
+                            <div id={`lyrics-${song.id}`} className="relative bg-brand-primary/10 border-t border-brand-primary p-4">
+                                <div className="absolute top-0 left-0">
                                     <button
                                         type="button"
                                         onClick={() => toggleLyrics(song.id)}
-                                        className="text-slate-700 hover:text-slate-900 transition flex items-center gap-1"
+                                        className="text-slate-700 hover:text-slate-900 transition flex items-center justify-center"
                                         title="Becsuk"
                                     >
-                                        <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="h-10 w-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7,14l5-5,5,5H7Z"/>
                                         </svg>
                                     </button>
                                 </div>
                                 <div
-                                    className="text-sm text-slate-700"
+                                    className="pt-10 text-sm text-slate-700"
                                     dangerouslySetInnerHTML={{ __html: song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.' }}
                                 />
                             </div>

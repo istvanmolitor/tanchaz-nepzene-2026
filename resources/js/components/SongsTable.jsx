@@ -73,20 +73,20 @@ function SongsTable({ filteredSongs, expandedSongIds, toggleLyrics }) {
                                         <tr id={`lyrics-${song.id}`} className="bg-transparent border-b-4 border-brand-primary">
                                             <td colSpan={7} className="bg-transparent">
                                                 <div className="relative p-4 border border-brand-secondary w-fit bg-white">
-                                                    <div className="flex justify-between items-start mb-2">
+                                                    <div className="absolute top-0 left-0">
                                                         <button
                                                             type="button"
                                                             onClick={() => toggleLyrics(song.id)}
                                                             className="flex items-center justify-center text-slate-700 hover:text-slate-900 transition"
                                                             title="Becsuk"
                                                         >
-                                                            <svg className="h-16 w-16 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <svg className="h-10 w-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M7,14l5-5,5,5H7Z"/>
                                                             </svg>
                                                         </button>
                                                     </div>
                                                     <div
-                                                        className="mt-2 text-sm text-slate-700"
+                                                        className="pt-10 text-sm text-slate-700"
                                                         dangerouslySetInnerHTML={{ __html: song.lyrics?.trim() ? song.lyrics : 'Ehhez a dalhoz még nincs dalszöveg.' }}
                                                     />
                                                 </div>
