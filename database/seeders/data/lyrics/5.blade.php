@@ -1,3 +1,5 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
 <x-verse>1.<br>
 Felnőtt az út mellett két szál majoránna,<br>
 Nem szereti földjét, el akar bujdosni.<br>
@@ -14,6 +16,7 @@ Sötét az idő, homály a felhő,<br>
 Uramról maradt egy vékony pejló,<br>
 Azt is neked adom.</x-verse>
 
+
 <x-verse>Nem kell kedvemnek, szép szerelmemnek,<br>
 Bánat a szívemnek.</x-verse>
 
@@ -25,6 +28,9 @@ Szép leány magamat, szép leány magamat.</x-verse>
 
 <x-verse>Az kell kedvemnek, szép szerelmemnek,<br>
 Öröm a szívemnek.</x-verse>
+
+                </div>
+<div>
 
 <x-verse>2.<br>
 Nyisd ki, rózsám, kit bezártál,<br>
@@ -54,3 +60,5 @@ Hogy szakajtott volna minden szegénylegény.</x-verse>
 
 <x-verse>Én is szakajtottam, de elszalajtottam,<br>
 Utánaszaladtam, de meg nem foghattam.</x-verse>
+</div>
+    </div>

@@ -1,3 +1,6 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
+
 <x-verse>Verd meg Isten azt a vermet,<br>
 Verd meg Isten azt a vermet,<br>
 Melyikbe a rózsám termett,<br>
@@ -13,6 +16,8 @@ Bőg a bárány a nagy hegyen,<br>
 Viszik a rózsámat kedden,<br>
 Viszik a rózsámat kedden.</x-verse>
 
+    </div><div>
+
 <x-verse>Megyek a siratójába,<br>
 Megyek a siratójába,<br>
 Búcsúzzak el utoljára,<br>
@@ -27,3 +32,6 @@ Az én rózsám visszakerül.</x-verse>
 Ha visszajön, visszavárom,<br>
 Ha pedig nem, nem sajnálom,<br>
 Ha pedig nem, nem sajnálom.</x-verse>
+
+    </div>
+</div>

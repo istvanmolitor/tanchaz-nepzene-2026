@@ -1,3 +1,5 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
 <x-verse>1.<br>
 Édesanyám, ha meguntál tartani,<br>
 Vígy el engem a vásárba eladni!<br>
@@ -18,6 +20,8 @@ Az én rózsám mással éli világát.</x-verse>
 Haragszik rám az én rózsám, mert nem szól.<br>
 Ha haragszik, haragudjék magába,<br>
 Vesse magát a zavaros Tiszába!</x-verse>
+    </div>
+    <div>
 
 <x-verse>2.<br>
 Ha meghalok, meghagyom,<br>
@@ -42,3 +46,5 @@ Hogy tavasszal nyílik rózsa.<br>
 Nem volnék már senki rabja,<br>
 Csak az én rózsám galambja,<br>
 Csak az én rózsám galambja.</x-verse>
+    </div>
+</div>

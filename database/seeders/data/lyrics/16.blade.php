@@ -1,3 +1,5 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
 <x-verse>1.<br>
 Mikor a szoroson lemész,<br>
 Mikor a szoroson lemész.<br>
@@ -24,7 +26,8 @@ Nananana…</x-verse>
 Aki csókol a sötétbe, áldja meg az Isten érte!<br>
 Aki csókol napvilágon, számoljon másvilágon,<br>
 Nananana…</x-verse>
-
+    </div>
+    <div>
 <x-verse>3.<br>
 Beteg a szeretőm szegény,<br>
 Én vagyok az orvos legény.<br>
@@ -45,3 +48,5 @@ Jaj, Istenem, meghalok! :II</x-verse>
 Soha nem kérek többet! :II<br>
 Adj egy szépet, adj egy jót,<br>
 Adj egy kedvemre valót! :II</x-verse>
+    </div>
+</div>

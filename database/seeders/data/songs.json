@@ -17,7 +17,7 @@
         "region_en": "Kis-Szamos Valley, Transylvania",
         "artist": "Tuba Örs és zenekara \/ Örs Tuba and his Band:\nBácsi Johanna – ének \/ voice\n Tuba Örs – hegedű I-II. \/ violin I-II.\n Varga Zaránd – brácsa \/ viola\n Bakos Botond – cimbalom \/ cymbalom\n Nagy Bálint – nagybőgő \/ double bass",
         "length": "5:45",
-        "file_name": "tuba-ors-es-zenekara-5-mix.wav"
+        "file_name": "tuba-ors-es-zenekara.wav"
     },
     {
         "id": "3",
@@ -77,7 +77,7 @@
         "region_en": "Târnava Mică Region, Transylvania",
         "artist": "Bauer Krisztina – ének \/ voice\n Juhász András – hegedű \/ violin\n Böröcz Ákos – kontra \/ 3 stringed viola\n Valjer András – nagybőgő \/ double bass",
         "length": "7:32",
-        "file_name": "bauer-krisztina-es-zenekara-5-mix.wav"
+        "file_name": "bauer-krisztina-es-zenekara.wav"
     },
     {
         "id": "9",
@@ -177,6 +177,6 @@
         "region_en": "Transylvania",
         "artist": "Magyarpalatkai banda \/ Magyarpalatka Band:\nCodoba Martin „Florin” – hegedű \/ violin\nCodoba Florin – hegedű \/ violin\nRadac Mihai „Remus” – kontra \/ 3 stringed viola\nCodoba Ignaţ Marius – kontra \/ 3 stringed viola\nSzabó Szilárd – nagybőgő \/ double bass",
         "length": "7:48",
-        "file_name": "magyarpalatkai-banda-5-mix.wav"
+        "file_name": "magyarpalatkai-banda.wav"
     }
 ]

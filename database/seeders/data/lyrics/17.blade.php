@@ -1,3 +1,5 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
 <x-verse>1.<br>
 Adjon Isten, édesanyám, jó estét,<br>
 Hazahoztam ezt a barna menyecskét.<br>
@@ -18,7 +20,8 @@ Mert ha tudná az én bús életemet,<br>
 E világon egyedül vagyok árván.<br>
 Árvaságom tudja meg a nagy ég is,<br>
 Sirat engem a repülő madár is.</x-verse>
-
+    </div>
+    <div>
 <x-verse>2.<br>
 Világ, világ, de meguntam magamat,<br>
 Odaadnám magamat a halálnak!<br>
@@ -40,3 +43,5 @@ Ki az árvát bántja!</x-verse>
 Veretlen ne hagyja,<br>
 Verje meg az egek Ura,<br>
 Ki az árvát bántja!</x-verse>
+    </div>
+</div>

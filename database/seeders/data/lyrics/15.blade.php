@@ -1,3 +1,6 @@
+<div class="grid gap-6 md:grid-cols-2">
+    <div>
+
 <x-verse>1.<br>
 Gyergyó felé fehér az ég,<br>
 Édes rózsám, élhetsz-e még?<br>
@@ -13,6 +16,9 @@ Szolgálónak nincs vasárnap,<br>
 Nálam nélkül táncolsz babám.<br>
 Táncolj, babám, ne várj engem,<br>
 Ne kesergesd az én lelkem!</x-verse>
+
+    </div>
+    <div>
 
 <x-verse>2.<br>
 Anyám, édesanyám,<br>
@@ -40,3 +46,5 @@ Sirattak volna meg tengernek habjai.</x-verse>
 
 <x-verse>Anyám, édesanyám, szívem, édesanyám,<br>
 Anyám, édesanyám, fölnevelő dajkám.</x-verse>
+    </div>
+</div>
